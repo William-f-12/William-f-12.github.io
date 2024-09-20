@@ -6,31 +6,67 @@
 
 <head>
     <meta name="author" content="William Lu">
-    <link rel="stylesheet" href="index_styles.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="..\css\index_style.css">
     <title>William Lu</title>
 </head>
 
 <body>
     <header>
-        <a href="index.html">
-            <ion-icon name="home"></ion-icon>
-        </a>
+        <nav id="navbar">
+            <div id="logo">
+                <a href="index.html">William Lu</a>
+            </div>
+
+            <ul id="navLinkList">
+                <li class="active"><a href="index.html"><ion-icon name="home"></ion-icon></a></li>
+                <li><a href="about.html"><ion-icon name="person-outline"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="settings-outline"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="headset-outline"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="moon-outline"></ion-icon></a></li>
+                <div id="marker"></div>
+            </ul>
+        </nav>
     </header>
-    <ion-icon name="albums-outline"></ion-icon>
-    <h1>William Lu's Website</h1>
-    <div>
-        <p>Welcome! This is my personal website.<br>It's still in developing though.</p>
-        <p>Here is my github profile below.</p>
+
+    <section id="about">
+        <p>Welcome! This is my personal website. It's still in developing though.</p>
+        <p>Below is my github profile.</p>
         <a href="https://github.com/William-f-12/" target="_blank">
             My Github Profile<br>
         </a>
         <a href="about.html">
             About Me<br>
         </a>
-    </div>
+    </section>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        let marker = document.querySelector("#marker");
+        let list = document.querySelectorAll("ul li");
+
+        function moveIndicator(e) {
+            marker.style.left = e.offsetLeft + 'px';
+            marker.style.width = e.offsetWidth + 'px';
+        }
+
+        list.forEach(link => {
+            link.addEventListener("mousemove", (e) => {
+                moveIndicator(e.target);
+            })
+        })
+
+        // add active class in hovered list item
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove("active"));
+            this.classList.add("active");
+        }
+
+        list.forEach((item) =>
+            item.addEventListener("mouseover", activeLink));
+    </script>
 </body>
 
 </html>
