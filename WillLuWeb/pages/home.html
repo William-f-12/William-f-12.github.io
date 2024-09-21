@@ -7,7 +7,7 @@
 <head>
     <meta name="author" content="William Lu">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="..\css\index_style.css">
+    <link rel="stylesheet" href="..\css\home_style.css">
     <title>William Lu</title>
 </head>
 
@@ -46,26 +46,28 @@
         let marker = document.querySelector("#marker");
         let list = document.querySelectorAll("ul li");
 
-        function moveIndicator(e) {
-            marker.style.left = e.offsetLeft + 'px';
-            marker.style.width = e.offsetWidth + 'px';
-        }
-
-        list.forEach(link => {
-            link.addEventListener("mousemove", (e) => {
-                moveIndicator(e.target);
-            })
-        })
-
         // add active class in hovered list item
         function activeLink() {
-            list.forEach((item) =>
+            list.forEach(item =>
                 item.classList.remove("active"));
             this.classList.add("active");
         }
 
         list.forEach((item) =>
             item.addEventListener("mouseover", activeLink));
+
+        function moveIndicator(e) {
+            marker.style.left = e.offsetLeft + 'px';
+            marker.style.width = e.offsetWidth + 'px';
+            marker.style.zIndex = 1;
+        }
+
+        list.forEach(link => {
+            link.addEventListener("mouseover", (e) => {
+                moveIndicator(e.target);
+            })
+        })
+
     </script>
 </body>
 
