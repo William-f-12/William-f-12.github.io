@@ -7,27 +7,17 @@
 <head>
     <meta name="author" content="William Lu">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="..\css\home_style.css">
     <title>William Lu</title>
+    <link rel="stylesheet" href="..\css\home_style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="..\js\load_navbar.js"></script>
 </head>
 
 <body>
     <header>
-        <nav id="navbar">
-            <div id="logo">
-                <a href="home.html">William Lu</a>
-            </div>
-
-            <ul id="navLinkList">
-                <!-- <li><a href=#><ion-icon name="chevron-forward-outline"></ion-icon></a></li> -->
-                <li class="active"><a href="home.html"><ion-icon name="home"></ion-icon></a></li>
-                <li><a href="about.html"><ion-icon name="person-outline"></ion-icon></a></li>
-                <li><a href="#"><ion-icon name="settings-outline"></ion-icon></a></li>
-                <li><a href="#"><ion-icon name="headset-outline"></ion-icon></a></li>
-                <li><a href="#"><ion-icon name="moon-outline"></ion-icon></a></li>
-                <div id="marker"></div>
-            </ul>
-        </nav>
+        <div id="navbarContainer"></div>
     </header>
 
     <section id="about">
@@ -38,36 +28,6 @@
             <a href="about.html"><br>About Me</a>
         </div>
     </section>
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script>
-        let marker = document.querySelector("#marker");
-        let list = document.querySelectorAll("ul li");
-
-        // add active class in hovered list item
-        function activeLink() {
-            list.forEach(item =>
-                item.classList.remove("active"));
-            this.classList.add("active");
-        }
-
-        list.forEach((item) =>
-            item.addEventListener("mouseover", activeLink));
-
-        function moveIndicator(e) {
-            marker.style.left = e.offsetLeft + 'px';
-            marker.style.width = e.offsetWidth + 'px';
-            marker.style.zIndex = 1;
-        }
-
-        list.forEach(link => {
-            link.addEventListener("mouseover", (e) => {
-                moveIndicator(e.target);
-            })
-        })
-
-    </script>
 </body>
 
 </html>
