@@ -68,6 +68,7 @@ ul li.active a ion-icon {
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: 12px;
     transition: 0.3s;
     backdrop-filter: blur(50px);
 }
@@ -75,7 +76,7 @@ ul li.active a ion-icon {
 #marker::before {
     content: "";
     position: absolute;
-    top: 8px;
+    top: 6px;
     left: 6px;
     transform: translateX();
     width: 60px;

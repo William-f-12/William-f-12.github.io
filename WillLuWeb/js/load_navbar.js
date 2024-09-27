@@ -1,13 +1,11 @@
 function loadNavbar() {
     let cachedNavbar = localStorage.getItem('navbar');
-    if (cachedNavbar) {
-        $('#navbarContainer').html(cachedNavbar);
-    } else {
+    if (!cachedNavbar) {
         $.get('../partials/_navbar.html', function (data) {
             localStorage.setItem('navbar', data);
         });
-        $('#navbarContainer').html(cachedNavbar);
     }
+    $('#navbarContainer').html(cachedNavbar);
 }
 
 document.addEventListener('DOMContentLoaded', loadNavbar);

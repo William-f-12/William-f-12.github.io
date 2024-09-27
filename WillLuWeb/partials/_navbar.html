@@ -8,8 +8,9 @@
     </div>
 
     <ul id="navLinkList">
-        <li><a href="home.html"><ion-icon name="home"></ion-icon></a></li>
-        <li><a href="about.html"><ion-icon name="person-outline"></ion-icon></a></li>
+        <li class="active"><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon></a></li>
+        <li><a href="..\pages\home.html"><ion-icon name="home"></ion-icon></a></li>
+        <li><a href="..\pages\about.html"><ion-icon name="person-outline"></ion-icon></a></li>
         <li><a href="#"><ion-icon name="book-outline"></ion-icon></a></li>
         <li><a href="#"><ion-icon name="document-outline"></ion-icon></a></li>
         <li><a href="#"><ion-icon name="headset-outline"></ion-icon></a></li>
@@ -25,6 +26,8 @@
 <script>
     let marker = document.querySelector("#marker");
     let list = document.querySelectorAll("ul li");
+    let targetElements = document.querySelectorAll('#navLinkList li');
+    let navbar = document.querySelector("#navbar");
 
     // add active class in hovered list item
     function activeLink() {
@@ -36,31 +39,45 @@
     list.forEach((item) =>
         item.addEventListener("mouseover", activeLink));
 
+    // move the marker to the active link
     function moveIndicator(e) {
         marker.style.left = e.offsetLeft + 'px';
+        marker.style.top = e.offsetTop + 'px';
         marker.style.width = e.offsetWidth + 'px';
+        marker.style.height = e.offsetHeight + 'px';
         marker.style.zIndex = 1;
     }
 
-    list.forEach(link => {
-        link.addEventListener("classList", (e) => {
-            moveIndicator(e.target);
-        })
+    const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            if (mutation.type === 'attributes' && mutation.attributeName === 'class' && mutation.target.className === 'active') {
+                // console.log('Class changed to:', mutation.target.className);
+                moveIndicator(mutation.target);
+            }
+        });
+    });
+
+    targetElements.forEach((targetElement) => {
+        observer.observe(targetElement, {
+            attributes: true,
+            attributeFilter: ['class']
+        });
     })
 
-    // const targetElement = document.querySelector('#navLinkList li');
+    // initialize the active class according to the current page
+    function initActive() {
+        let page = document.querySelector("head").getAttribute("id");
+        if (page === "home") {
+            list.forEach(item =>
+                item.classList.remove("active"));
+            list[1].classList.add("active");
+        } else if (page === "about") {
+            list.forEach(item =>
+                item.classList.remove("active"));
+            list[2].classList.add("active");
+        }
+    }
 
-    // const observer = new MutationObserver((mutations) => {
-    //     mutations.forEach((mutation) => {
-    //         if (mutation.type === 'attributes' && mutation.attributeName === 'class' && mutation.target.className === 'active') {
-    //             console.log('Class changed to:', mutation.target.className);
-    //             moveIndicator(mutation.target);
-    //         }
-    //     });
-    // });
-
-    // observer.observe(targetElement, {
-    //     attributes: true,
-    //     attributeFilter: ['class']
-    // });
+    window.setTimeout(initActive, 250);
+    navbar.addEventListener("mouseout", initActive);
 </script>
