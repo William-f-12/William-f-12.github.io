@@ -8,7 +8,7 @@
     </div>
 
     <ul id="navLinkList">
-        <li class="active"><a href="home.html"><ion-icon name="home"></ion-icon></a></li>
+        <li><a href="home.html"><ion-icon name="home"></ion-icon></a></li>
         <li><a href="about.html"><ion-icon name="person-outline"></ion-icon></a></li>
         <li><a href="#"><ion-icon name="book-outline"></ion-icon></a></li>
         <li><a href="#"><ion-icon name="document-outline"></ion-icon></a></li>
@@ -43,8 +43,24 @@
     }
 
     list.forEach(link => {
-        link.addEventListener("mouseover", (e) => {
+        link.addEventListener("classList", (e) => {
             moveIndicator(e.target);
         })
     })
+
+    // const targetElement = document.querySelector('#navLinkList li');
+
+    // const observer = new MutationObserver((mutations) => {
+    //     mutations.forEach((mutation) => {
+    //         if (mutation.type === 'attributes' && mutation.attributeName === 'class' && mutation.target.className === 'active') {
+    //             console.log('Class changed to:', mutation.target.className);
+    //             moveIndicator(mutation.target);
+    //         }
+    //     });
+    // });
+
+    // observer.observe(targetElement, {
+    //     attributes: true,
+    //     attributeFilter: ['class']
+    // });
 </script>
