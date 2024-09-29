@@ -13,9 +13,9 @@
         <li><a href="..\pages\about.html"><ion-icon name="person-outline"></ion-icon></a></li>
         <li><a href="..\pages\blog.html"><ion-icon name="book-outline"></ion-icon></a></li>
         <li><a href="..\pages\notes.html"><ion-icon name="document-outline"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="images-outline"></ion-icon></a></li>
         <li><a href="#"><ion-icon name="settings-outline"></ion-icon></a></li>
-        <!-- <li><a href="#"><ion-icon name="headset-outline"></ion-icon></a></li>
-        <li><a href="#"><ion-icon name="moon-outline"></ion-icon></a></li> -->
+        <!-- <li><a href="#"><ion-icon name="moon-outline"></ion-icon></a></li> -->
         <div id="marker"></div>
     </ul>
 </nav>
@@ -77,6 +77,14 @@
             list.forEach(item =>
                 item.classList.remove("active"));
             list[2].classList.add("active");
+        } else if (page === "blog") {
+            list.forEach(item =>
+                item.classList.remove("active"));
+            list[3].classList.add("active");
+        } else if (page === "notes") {
+            list.forEach(item =>
+                item.classList.remove("active"));
+            list[4].classList.add("active");
         }
     }
 
