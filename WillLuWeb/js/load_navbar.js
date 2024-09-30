@@ -3,7 +3,7 @@ function loadNavbar() {
     // if (cachedNavbar) {
     //     $('#navbarContainer').html(cachedNavbar);
     // } else {
-        $.get('../partials/_navbar.html', function (data) {
+        $.get('../partials/navbar.html', function (data) {
             $('#navbarContainer').html(data);
         });
     // }
