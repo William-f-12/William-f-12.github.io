@@ -21,3 +21,31 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+#Algorithm_Data_Structure {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Algorithm_Data_Structure div {
+    padding: 50px;
+    width: 400px;
+    height: 300px;
+    border-radius: 12px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #be7e4a;
+}
+
+#Algorithm_Data_Structure div a {
+    position: relative;
+    top: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+}
