@@ -8,7 +8,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: auto;
+    height: 120px;
     width: 100%;
     z-index: 1;
     background-color: #212121;
@@ -25,58 +25,79 @@
 
 #navLinkList {
     position: relative;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0px 15px;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style: none;
-    border-radius: 25px;
+    border-radius: 20px;
+    /* overflow: hidden; */
     background: #82111e;
 }
 
 #navLinkList li {
     margin-left: 0px;
     width: 72px;
+    height: 72px;
+    list-style: none;
+    z-index: 1;
 }
 
 #navLinkList li a {
     position: relative;
-    color: #f1e3d9;
-    text-decoration: none;
-    display: inline-block;
+    display: flex;
     padding: 20px 20px;
-    z-index: 100;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    z-index: 1;
 }
 
-#navLinkList li a ion-icon {
+#navLinkList li a .icon {
+    position: relative;
+    display: inline-block;
+    line-height: 5px;
     font-size: 2em;
     pointer-events: none;
-    opacity: 0.5;
-    transition: 0.25s;
+    transition: 0.5s;
+    opacity: 0.8;
+    color: #f1e3d9;
 }
 
-#navLinkList li.active a ion-icon {
+#navLinkList li.active a .icon {
+    transform: translateY(-15px);
+    color: #212121;
+    opacity: 1;
+}
+
+#navLinkList li a .text {
+    position: absolute;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.4s;
+    color: #f1e3d9;
+    opacity: 0;
+}
+
+#navLinkList li.active a .text {
+    transform: translateY(20px);
     opacity: 1;
 }
 
 #navBarMarker {
     position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.3s;
-    backdrop-filter: blur(50px);
-}
-
-#navBarMarker::before {
-    content: "";
-    position: absolute;
-    top: 6px;
+    top: -10px;
     left: 6px;
-    transform: translateX();
     width: 60px;
     height: 60px;
+    transition: 0.3s;
     border-radius: 20px;
-    background: #894e54;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    background: #f1e3d9;
+    border: #212121 solid 5px;
 }

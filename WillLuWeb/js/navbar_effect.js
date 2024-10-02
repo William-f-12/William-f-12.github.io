@@ -7,7 +7,7 @@ let pageLink = document.querySelector("#curPage");
 // first move the marker to the right position according to the current page
 for (let i = 0; i < list.length; i++) {
     if (list[i].classList.contains("active")) {
-        marker.style.left = 20 + 72 * i + 'px';
+        marker.style.left = 21 + 72 * i + 'px';
         break;
     }
 }
@@ -24,7 +24,7 @@ list.forEach((item) =>
 
 // move the marker to the active link
 function moveIndicator(e) {
-    marker.style.left = e.offsetLeft + 'px';
+    marker.style.left = e.offsetLeft + 6 + 'px';
 }
 
 const observer = new MutationObserver((mutations) => {
