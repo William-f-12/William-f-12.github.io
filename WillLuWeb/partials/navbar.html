@@ -1,5 +1,7 @@
+<!-- This file is use for javascript dynamic loading navbar, not using anymore, see load_navbar.js -->
+
 <!--CSS style for navbar-->
-<link rel="stylesheet" href="..\css\navbar_style.css">
+<link rel="stylesheet" href="../css/navbar_style.css">
 
 <!--HTML for navbar-->
 <nav id="navbar">
@@ -9,14 +11,13 @@
 
     <ul id="navLinkList">
         <li class="active"><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon></a></li>
-        <li><a href="..\pages\home.html"><ion-icon name="home"></ion-icon></a></li>
-        <li><a href="..\pages\about.html"><ion-icon name="person-outline"></ion-icon></a></li>
-        <li><a href="..\pages\blog.html"><ion-icon name="book-outline"></ion-icon></a></li>
-        <li><a href="..\pages\notes.html"><ion-icon name="document-outline"></ion-icon></a></li>
-        <li><a href="..\pages\gallery.html"><ion-icon name="images-outline"></ion-icon></a></li>
+        <li><a href="../pages/about.html"><ion-icon name="person-outline"></ion-icon></a></li>
+        <li><a href="../pages/blog.html"><ion-icon name="book-outline"></ion-icon></a></li>
+        <li><a href="../pages/notes.html"><ion-icon name="document-outline"></ion-icon></a></li>
+        <li><a href="../pages/gallery.html"><ion-icon name="images-outline"></ion-icon></a></li>
         <li><a href="#"><ion-icon name="settings-outline"></ion-icon></a></li>
         <!-- <li><a href="#"><ion-icon name="moon-outline"></ion-icon></a></li> -->
-        <div id="marker"></div>
+        <div id="navBarMarker"></div>
     </ul>
 </nav>
 
@@ -26,9 +27,8 @@
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <!--JavaScript for navbar effects-->
 <script>
-    let marker = document.querySelector("#marker");
-    let list = document.querySelectorAll("ul li");
-    let targetElements = document.querySelectorAll('#navLinkList li');
+    let marker = document.querySelector("#navBarMarker");
+    let list = document.querySelectorAll("#navLinkList li");
     let navbar = document.querySelector("#navbar");
 
     // add active class in hovered list item
@@ -59,8 +59,8 @@
         });
     });
 
-    targetElements.forEach((targetElement) => {
-        observer.observe(targetElement, {
+    list.forEach((item) => {
+        observer.observe(item, {
             attributes: true,
             attributeFilter: ['class']
         });
