@@ -16,12 +16,13 @@
 1. Update the README.md file to record dev log.
 2. Abandon the implementation of using the same navigation bar html/css file to improve performance.
 3. Change the style and visual effect of the navigation bar.
+4. Add 20 photos I took, and build the gallery page.
 
-<br/><br/><br/><br/><br/>
+<br/><br/><br/>
 
 ---
 
-<br/><br/><br/><br/><br/>
+<br/><br/><br/>
 
 # <a name="Chinese"></a>开发日志:    
 
@@ -37,3 +38,4 @@
 1. 更新 README.md 文件，记录开发日志。
 2. 舍弃掉用同一个导航栏 html/css 文件的实现，提升性能。
 3. 更改了导航栏的风格和视觉效果。
+4. 添加了20张本人拍的照片，完成了画廊展示页的实现。
