@@ -5,7 +5,6 @@
 }
 
 body {
-    position: fixed;
     width: 100%;
     height: 100%;
     background-image: url(../asserts/img/bg_texture.png);
@@ -13,12 +12,65 @@ body {
     background-color: #ede3e7;
 }
 
-#detail {
-    margin: 20px;
-    margin-top: 170px;
-    height: auto;
-    width: auto;
-    position: center;
-    justify-content: center;
-    align-items: center;
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#Top {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    top: 10%;
+}
+
+#bg_img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    filter: sepia(90%);
+    background-image: url(../asserts/img/about_top_bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 30%;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+/* #bg_img img {
+    position: relative;
+    width: 100%;
+    top: -100%;
+    filter: sepia(90%);
+    background-attachment: fixed;
+} */
+
+#intro {
+    position: absolute;
+    padding: 3%;
+    top: 15%;
+    right: 0%;
+    width: 70%;
+    height: 70%;
+    background-color: #ede3e757;
+}
+
+#intro p {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+#myPhoto {
+    position: absolute;
+    padding: 10px;
+    margin: 3% 6%;
+    width: 15%;
+    top: -5%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+#myPhoto img {
+    position: relative;
+    width: 100%;
 }
