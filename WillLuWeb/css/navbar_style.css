@@ -8,7 +8,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 10%;
+    height: 10vh;
     width: 100%;
     z-index: 1;
     background-color: #212121;
@@ -94,10 +94,10 @@
 
 #navBarMarker {
     position: absolute;
-    top: -16%;
+    top: -12px;
     left: 6px;
-    width: 13%;
-    height: 90%;
+    width: 60px;
+    height: 60px;
     transition: 0.3s;
     border-radius: 20px;
     background: #f1e3d9;

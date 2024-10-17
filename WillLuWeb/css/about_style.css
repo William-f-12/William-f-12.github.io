@@ -10,6 +10,7 @@ body {
     background-image: url(../asserts/img/bg_texture.png);
     transition: background-color 2s ease-in;
     background-color: #ede3e7;
+    font-family: Georgia, serif;
 }
 
 body::-webkit-scrollbar {
@@ -21,6 +22,7 @@ body::-webkit-scrollbar {
     width: 100%;
     height: 20%;
     top: 10%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
 #bg_img {
@@ -32,7 +34,7 @@ body::-webkit-scrollbar {
     background-image: url(../asserts/img/about_top_bg.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: 0 30%;
+    background-position: 0 60%;
     background-attachment: fixed;
     overflow: hidden;
 }
@@ -52,12 +54,13 @@ body::-webkit-scrollbar {
     right: 0%;
     width: 70%;
     height: 70%;
-    background-color: #ede3e757;
+    background-color: #21212190;
 }
 
 #intro p {
     font-size: 1.5em;
     font-weight: 500;
+    color: #ede3e7;
 }
 
 #myPhoto {
@@ -73,4 +76,48 @@ body::-webkit-scrollbar {
 #myPhoto img {
     position: relative;
     width: 100%;
+}
+
+#about {
+    position: absolute;
+    width: 70%;
+    height: 200%;
+    top: 30%;
+    left: 15%;
+    padding: 3% 10%;
+    background-image: url(../asserts/img/bg_texture.png);
+    background-color: #e9ddb6;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+h1 {
+    margin-bottom: 1em;
+    font-size: 40px;
+    font-weight: bold;
+    color: #212121;
+}
+
+p {
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    /* font-weight: bold; */
+}
+
+p a {
+    color: #986814;
+    text-decoration: none;
+}
+
+p a:hover {
+    color: #069;
+    text-decoration: underline;
+}
+
+.dropcap:first-letter {
+    float: left;
+    font-size: 60px;
+    letter-spacing: 0.2em;
+    padding-right: 5px;
+    font-family: Georgia, sans-serif;
 }
