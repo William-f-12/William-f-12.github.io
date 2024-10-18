@@ -75,17 +75,18 @@ p a:hover {
 #intro {
     position: absolute;
     padding-top: 3%;
+    padding-left: 3%;
     padding-bottom: 3%;
     top: 15%;
     right: 0%;
     width: 70%;
     height: 70%;
-    text-align: center;
+    /* text-align: center; */
     background-color: #21212190;
 }
 
 #intro p {
-    font-size: 30px;
+    font-size: 26px;
     color: #ede3e7;
 }
 
@@ -107,21 +108,33 @@ p a:hover {
 #about {
     position: absolute;
     width: 70%;
-    height: 80%;
+    height: 60%;
     top: 30%;
     left: 15%;
-    padding: 5% 10%;
+    padding: 4% 10%;
     background-image: url(../asserts/img/block_texture.png);
     /* background-color: #e9ddb6; */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     z-index: -1;
 }
 
+#eduExp {
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    top: 120%;
+    left: 15%;
+    padding: 3% 10%;
+    background-image: url(../asserts/img/block_texture.png);
+    /* background-color: #e9ddb6; */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
 #project {
     position: absolute;
     width: 70%;
     height: 60%;
-    top: 140%;
+    top: 230%;
     left: 15%;
     padding: 3% 10%;
     background-image: url(../asserts/img/block_texture.png);
@@ -133,7 +146,7 @@ p a:hover {
     position: absolute;
     width: 70%;
     height: 60%;
-    top: 230%;
+    top: 300%;
     left: 15%;
     padding: 3% 10%;
     background-image: url(../asserts/img/block_texture.png);
