@@ -17,6 +17,31 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+h1 {
+    margin-bottom: 1em;
+    font-size: 40px;
+    font-weight: bold;
+    color: #212121;
+}
+
+p {
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+    /* font-weight: bold; */
+}
+
+p a {
+    color: #986814;
+    text-decoration: none;
+}
+
+p a:hover {
+    color: #069;
+    text-decoration: underline;
+}
+
 #Top {
     position: absolute;
     width: 100%;
@@ -49,17 +74,18 @@ body::-webkit-scrollbar {
 
 #intro {
     position: absolute;
-    padding: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     top: 15%;
     right: 0%;
     width: 70%;
     height: 70%;
+    text-align: center;
     background-color: #21212190;
 }
 
 #intro p {
-    font-size: 1.5em;
-    font-weight: 500;
+    font-size: 30px;
     color: #ede3e7;
 }
 
@@ -81,43 +107,59 @@ body::-webkit-scrollbar {
 #about {
     position: absolute;
     width: 70%;
-    height: 200%;
+    height: 80%;
     top: 30%;
     left: 15%;
-    padding: 3% 10%;
-    background-image: url(../asserts/img/bg_texture.png);
-    background-color: #e9ddb6;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 5% 10%;
+    background-image: url(../asserts/img/block_texture.png);
+    /* background-color: #e9ddb6; */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     z-index: -1;
 }
 
-h1 {
-    margin-bottom: 1em;
-    font-size: 40px;
-    font-weight: bold;
-    color: #212121;
+#project {
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    top: 140%;
+    left: 15%;
+    padding: 3% 10%;
+    background-image: url(../asserts/img/block_texture.png);
+    /* background-color: #e9ddb6; */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-p {
-    font-size: 20px;
-    letter-spacing: 0.05em;
-    /* font-weight: bold; */
-}
-
-p a {
-    color: #986814;
-    text-decoration: none;
-}
-
-p a:hover {
-    color: #069;
-    text-decoration: underline;
+#contact {
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    top: 230%;
+    left: 15%;
+    padding: 3% 10%;
+    background-image: url(../asserts/img/block_texture.png);
+    /* background-color: #e9ddb6; */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .dropcap:first-letter {
     float: left;
-    font-size: 60px;
-    letter-spacing: 0.2em;
-    padding-right: 5px;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    /* padding-right: 5px; */
     font-family: Georgia, sans-serif;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    left: 0;
+    top: 320%;
+    background-color: #212121;
+}
+
+footer p {
+    margin-top: 3%;
+    text-align: center;
+    color: #ede3e7;
 }
