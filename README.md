@@ -18,6 +18,7 @@
 3. Change the style and visual effect of the navigation bar.
 4. Add 20 photos I took, and build the gallery page.
 5. Slightly modified the size of the navigation bar and added a top image to the About Me page.
+6. Updated the About Me page to add an introduction and special effects.
 
 <br/><br/><br/>
 
@@ -41,3 +42,4 @@
 3. 更改了导航栏的风格和视觉效果。
 4. 添加了20张本人拍的照片，完成了画廊展示页的实现。
 5. 略微修改了导航栏的大小，为关于我页面添加了顶部图片。
+6. 更新了关于我页面，添加了介绍与特效。

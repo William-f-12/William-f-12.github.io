@@ -1,3 +1,8 @@
+:root {
+    scroll-behavior: smooth;
+    --bg_color: #ede3e7;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +14,7 @@ body {
     height: 100%;
     background-image: url(../asserts/img/bg_texture.png);
     transition: background-color 2s ease-in;
-    background-color: #ede3e7;
+    background-color: var(--bg_color);
     font-family: Georgia, serif;
 }
 
@@ -79,20 +84,42 @@ hr {
 
 #intro {
     position: absolute;
-    padding-top: 3%;
-    padding-left: 3%;
-    padding-bottom: 3%;
-    top: 15%;
+    display: flex;
+    padding-top: 1em;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1em;
+    top: 17%;
     right: 0%;
-    width: 70%;
-    height: 70%;
-    /* text-align: center; */
+    width: 50%;
+    height: auto;
+    text-align: center;
+    align-items: center;
     background-color: #21212190;
 }
 
-#intro p {
+#typing-text {
+    position: relative;
+    top: 0.75em;
     font-size: 26px;
     color: #ede3e7;
+}
+
+#typing-text::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    margin-bottom: -2px;
+    margin-left: -2px;
+    background-color: #ede3e7;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        background-color: transparent;
+    }
 }
 
 #myPhoto {
