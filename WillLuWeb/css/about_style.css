@@ -154,7 +154,7 @@ hr {
 #eduExp {
     position: absolute;
     width: 70%;
-    height: 95%;
+    height: 100%;
     top: 75%;
     left: 15%;
     padding: 3% 10%;
@@ -166,20 +166,8 @@ hr {
 #project {
     position: absolute;
     width: 70%;
-    height: 60%;
-    top: 180%;
-    left: 15%;
-    padding: 3% 10%;
-    background-image: url(../asserts/img/block_texture.png);
-    /* background-color: #e9ddb6; */
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-#contact {
-    position: absolute;
-    width: 70%;
-    height: 60%;
-    top: 250%;
+    height: 65%;
+    top: 185%;
     left: 15%;
     padding: 3% 10%;
     background-image: url(../asserts/img/block_texture.png);
