@@ -39,12 +39,12 @@ p {
 }
 
 a {
-    color: #986814;
+    color: #8a6913;
     text-decoration: none;
 }
 
 a:hover {
-    color: #069;
+    color: #10aec2;
     text-decoration: underline;
 }
 
@@ -145,9 +145,10 @@ hr {
     right: 0;
     width: 13%;
     height: 35%;
-    background-color: #e9ddb6;
+    background-color: #fffefa;
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    background-image: url(../asserts/img/bright-squares.png);
 }
 
 #sideBarContent {
@@ -158,6 +159,32 @@ hr {
 
 #sideBarContent li {
     list-style: none;
+}
+
+#contact a {
+    position: relative;
+    display: flex;
+    float: left;
+    margin: 10px 10px;
+    width: 45px;
+    height: 45px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    color: #212121;
+}
+
+#contact a .icon {
+    font-size: 45px;
+    pointer-events: none;
+}
+
+#contact a:hover {
+    transform: scale(1.2);
+    color: #10aec2;
 }
 
 #about {

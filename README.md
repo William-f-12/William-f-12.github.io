@@ -19,6 +19,7 @@
 4. Add 20 photos I took, and build the gallery page.
 5. Slightly modified the size of the navigation bar and added a top image to the About Me page.
 6. Updated the About Me page to add an introduction and special effects.
+7. Finished the About Me page.
 
 <br/><br/><br/>
 
@@ -43,3 +44,4 @@
 4. 添加了20张本人拍的照片，完成了画廊展示页的实现。
 5. 略微修改了导航栏的大小，为关于我页面添加了顶部图片。
 6. 更新了关于我页面，添加了介绍与特效。
+7. 完成了关于我页面。
