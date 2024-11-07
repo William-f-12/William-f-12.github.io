@@ -102,7 +102,7 @@ hr {
 #typing-text {
     position: relative;
     top: 0.50em;
-    font-size: 26px;
+    font-size: 2vh;
     color: #ede3e7;
 }
 
@@ -145,7 +145,7 @@ hr {
     right: 0;
     width: 13%;
     height: 35%;
-    background-color: #fffefa;
+    background-color: #575757;
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
     background-image: url(../asserts/img/asfalt-dark.png);
@@ -157,6 +157,18 @@ hr {
     align-items: center;
 }
 
+#sideBarContent p {
+    color: #ede3e7;
+}
+
+#sideBarContent ul li a {
+    color: #fc8c23;
+}
+
+#sideBarContent ul li a:hover {
+    color: #10aec2;
+}
+
 #sideBarContent li {
     list-style: none;
 }
@@ -165,26 +177,30 @@ hr {
     position: relative;
     display: flex;
     float: left;
-    margin: 10px 10px;
-    width: 45px;
-    height: 45px;
+    margin: 1vh 1vh;
+    width: 3.5vh;
+    height: 3.5vh;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     text-decoration: none;
     text-align: center;
     font-weight: 500;
-    color: #212121;
+    color: #ad9e5f;
 }
 
 #contact a .icon {
-    font-size: 45px;
+    font-size: 3.5vh;
     pointer-events: none;
 }
 
 #contact a:hover {
     transform: scale(1.2);
-    color: #10aec2;
+    color: #fc8c23;
+}
+
+#contact span p {
+    color: #fc8c23;
 }
 
 #about {
