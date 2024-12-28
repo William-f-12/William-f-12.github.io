@@ -10,35 +10,65 @@ body {
   height: 100%;
   background-image: url(../asserts/img/bg_texture.png);
   transition: background-color 2s ease-in;
-  background-color: #ede3e7;
+  background-color: #28434b;
 }
 
-#about {
-  margin: 20px;
-  margin-top: 170px;
-  height: auto;
-  width: auto;
+p {
+  font-size: 3vh;
+  line-height: 1.5em;
+  color: rgb(255, 255, 255);
+}
+
+#links * {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#about div {
-  margin: 20px;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.5);
-  position: relative;
-  top: 0;
-  left: 0;
-  background-color: #be7e4a;
+#aboutMe {
+  height: 20vh;
+  width: 20vh;
+  top: 35%;
+  left: 10%;
+  position: absolute;
+  background-color: #363a31;
+  box-shadow: 0px 0px 30px rgba(200, 200, 200, 0.8);
 }
 
-#about div p {
-  font-size: 24px;
+#aboutMe:hover {
+  transform: scale(1.03);
+  transition: 0.2s ease-in;
+  box-shadow: 0px 0px 30px rgba(255, 255, 255, 1);
 }
 
-#about div a {
-  font-size: 24px;
-  text-decoration: none;
+#github {
+  height: 20vh;
+  width: 20vh;
+  top: 65%;
+  left: 30%;
+  position: absolute;
+  background-color: #363a31;
+  box-shadow: 0px 0px 30px rgba(200, 200, 200, 0.8);
+}
+
+#github:hover {
+  transform: scale(1.03);
+  transition: 0.2s ease-in;
+  box-shadow: 0px 0px 30px rgba(255, 255, 255, 1);
+}
+
+#gallery {
+  height: 20vh;
+  width: 20vh;
+  top: 25%;
+  left: 60%;
+  position: absolute;
+  background-color: #363a31;
+  box-shadow: 0px 0px 30px rgba(200, 200, 200, 0.8);
+}
+
+#gallery:hover {
+  transform: scale(1.03);
+  transition: 0.2s ease-in;
+  box-shadow: 0px 0px 30px rgba(255, 255, 255, 1);
 }
