@@ -24,6 +24,7 @@
 ## **Third Phase: <- Current Phase**
 1. Added some navigation nodes to the homepage and initially improved its appearance.
 2. Change the entry page to about page.
+3. Update the personal photo in about page, add the tiny-chat project experience, add relevant courses and update the downloadable files.
 
 <br/><br/><br/>
 
@@ -53,3 +54,4 @@
 ## **第三阶段：<- 目前阶段**
 1. 为主页添加了部分转跳节点，初步美化了了外观。
 2. 更改进入页面为About页面。
+3. 更改了关于我页面的个人照片，增加了tiny-chat的经历，增加了专业相关课程，并更新了可下载文件。
