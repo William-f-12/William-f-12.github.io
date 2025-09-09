@@ -31,7 +31,7 @@ h1 {
 
 p {
     /* font-size: 20px; */
-    font-size: 1.6vh;
+    font-size: clamp(0.8rem, 1rem + 0.2vw, 1.2rem);
     letter-spacing: 0.05em;
     line-height: 1.5em;
     margin-bottom: 1.5vh;
@@ -54,23 +54,20 @@ hr {
 }
 
 #Top {
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 25%;
-    top: 0px;
+    min-height: clamp(240px, 28vh, 420px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
 #bg_img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    top: 0px;
+    position: absolute;
+    inset: 0;
     filter: sepia(90%);
     background-image: url(../asserts/img/about_top_bg.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0 60%;
+    background-position: center 60%;
     background-attachment: fixed;
     overflow: hidden;
 }
@@ -92,7 +89,7 @@ hr {
     padding-bottom: 1em;
     bottom: 10%;
     right: 0%;
-    width: 50%;
+    width: max(250px, 50%);
     height: auto;
     text-align: center;
     align-items: center;
@@ -127,7 +124,7 @@ hr {
     position: absolute;
     padding: 10px;
     margin: 3% 6%;
-    width: 12%;
+    width: clamp(120px, 12%, 12%);
     top: 30%;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -136,6 +133,7 @@ hr {
 #myPhoto img {
     position: relative;
     width: 100%;
+    display: block;
 }
 
 #sideBar {
@@ -143,8 +141,8 @@ hr {
     position: fixed;
     top: 25%;
     right: 0;
-    width: 13%;
-    height: 35%;
+    width: clamp(180px, 13%, 13%);
+    /* height: 35%; */
     background-color: #575757;
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
@@ -190,7 +188,7 @@ hr {
 }
 
 #contact a .icon {
-    font-size: 3.5vh;
+    font-size: calc(2.5vh + 1vw);
     pointer-events: none;
 }
 
@@ -204,16 +202,14 @@ hr {
 }
 
 #about {
-    position: absolute;
+    position: static;
     width: 70%;
-    height: 40%;
-    top: 25%;
-    left: 15%;
+    margin: 0 15% 8% 15%;
     padding: 2% 10%;
     background-image: url(../asserts/img/bg_texture.png);
     background-color: #e9ddb6;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    z-index: -1;
+    z-index: auto;
 }
 
 #goToEduExp {
@@ -224,12 +220,10 @@ hr {
 }
 
 #eduExp {
-    position: absolute;
+    position: static;
     width: 70%;
-    height: 140%;
-    top: 75%;
-    left: 15%;
-    padding: 3% 10%;
+    margin: 0 15% 8% 15%;
+    padding: 2% 10%;
     background-image: url(../asserts/img/bg_texture.png);
     background-color: #e9ddb6;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
@@ -246,9 +240,19 @@ hr {
     position: absolute;
     width: 70%;
     height: 25%;
-    top: 225%;
+    top: 235%;
     left: 15%;
     padding: 3% 10%;
+    background-image: url(../asserts/img/bg_texture.png);
+    background-color: #e9ddb6;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#download {
+    position: static;
+    width: 70%;
+    margin: 0 15% 0 15%;
+    padding: 2% 10%;
     background-image: url(../asserts/img/bg_texture.png);
     background-color: #e9ddb6;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
@@ -274,16 +278,15 @@ hr {
 }
 
 footer {
-    position: absolute;
+    position: static;
     width: 100%;
-    height: 15%;
-    left: 0;
-    top: 250%;
+    margin-top: 0;
+    padding: 5% 0;
     background-color: #212121;
 }
 
 footer p {
-    margin-top: 3%;
+    margin: 0;
     text-align: center;
     color: #ede3e7;
 }
