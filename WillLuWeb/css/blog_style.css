@@ -10,7 +10,7 @@ body {
     height: 100%;
     background-image: url(../asserts/img/bg_texture.png);
     transition: background-color 2s ease-in;
-    background-color: #ede3e7;
+    background-color: var(--bg_color);
 }
 
 #detail {
