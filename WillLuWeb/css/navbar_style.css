@@ -11,13 +11,13 @@
     height: 100px;
     width: 100%;
     z-index: 1;
-    background-color: #212121;
+    background-color: var(--nb_bg_color);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 #logo a {
     position: relative;
-    color: #f1e3d9;
+    color: var(--nb_logo_color);
     text-decoration: none;
     font-size: 40px;
     font-weight: bold;
@@ -34,7 +34,7 @@
     align-items: center;
     border-radius: 20px;
     /* overflow: hidden; */
-    background: #82111e;
+    background: var(--nb_link_bg_color);
 }
 
 #navLinkList li {
@@ -68,12 +68,12 @@
     pointer-events: none;
     transition: 0.5s;
     opacity: 0.8;
-    color: #f1e3d9;
+    color: var(--nb_marker_color);
 }
 
 #navLinkList li.active a .icon {
     transform: translateY(-16px);
-    color: #212121;
+    color: var(--nb_bg_color);
     opacity: 1;
 }
 
@@ -81,10 +81,10 @@
     position: absolute;
     text-align: center;
     font-weight: 400;
-    font-size: 100%;
+    font-size: 110%;
     letter-spacing: 0.05em;
     transition: 0.4s;
-    color: #f1e3d9;
+    color: var(--nb_marker_color);
     opacity: 0;
 }
 
@@ -101,6 +101,6 @@
     height: 58px;
     transition: 0.3s;
     border-radius: 20px;
-    background: #f1e3d9;
-    border: #212121 solid 5px;
+    background: var(--nb_marker_color);
+    border: var(--nb_bg_color) solid 5px;
 }

@@ -1,0 +1,43 @@
+.bright-mode {
+    --nb_bg_color: #161823;
+    --nb_logo_color: #a393eb;
+    --nb_link_bg_color: #5d606c;
+    --nb_marker_color: #fbede0;
+
+    --bg_color: #daebe3;
+    --text_color: #212121;
+    --h1_color: #212121;
+    --a_color: #cfc6c4;
+    --a_color_hover: #99cdd8;
+    --sideBar_color: #657166;
+    --block_color: #fde8d3;
+}
+
+.dark-mode {
+    --nb_bg_color: #161823;
+    --nb_logo_color: #a393eb;
+    --nb_link_bg_color: #5d606c;
+    --nb_marker_color: #fbede0;
+
+    --bg_color: #100517;
+    --text_color: #fbede0;
+    --h1_color: #d3cbf4;
+    --a_color: #7da0ca;
+    --a_color_hover: #c1e8ff;
+    --block_color: #242635;
+}
+
+.sunset-mode {
+    --nb_bg_color: #fff5a5;
+    --nb_logo_color: #ff6464;
+    --nb_link_bg_color: #ffaa64;
+    --nb_marker_color: #81021f;
+
+    --bg_color: #daebe3;
+    --text_color: #212121;
+    --h1_color: #212121;
+    --a_color: #cfc6c4;
+    --a_color_hover: #99cdd8;
+    --sideBar_color: #657166;
+    --block_color: #fde8d3;
+}

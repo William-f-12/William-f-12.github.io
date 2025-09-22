@@ -1,6 +1,5 @@
 :root {
     scroll-behavior: smooth;
-    --bg_color: #ede3e7;
 }
 
 * {
@@ -26,7 +25,7 @@ h1 {
     margin-bottom: 1em;
     font-size: 40px;
     font-weight: bold;
-    color: #212121;
+    color: var(--h1_color);
 }
 
 p {
@@ -35,22 +34,23 @@ p {
     letter-spacing: 0.05em;
     line-height: 1.5em;
     margin-bottom: 1.5vh;
+    color: var(--text_color);
     /* font-weight: bold; */
 }
 
 a {
-    color: #8a6913;
+    color: var(--a_color);
     text-decoration: none;
 }
 
 a:hover {
-    color: #10aec2;
+    color: var(--a_color_hover);
     text-decoration: underline;
 }
 
 hr {
     border: 0;
-    border-top: 1px solid #212121;
+    border-top: 1px solid var(--h1_color);
 }
 
 #Top {
@@ -63,7 +63,7 @@ hr {
 #bg_img {
     position: absolute;
     inset: 0;
-    filter: sepia(90%);
+    filter: sepia(80%);
     background-image: url(../asserts/img/about_top_bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -139,11 +139,11 @@ hr {
 #sideBar {
     padding: 1%;
     position: fixed;
-    top: 25%;
+    top: 28%;
     right: 0;
     width: clamp(180px, 13%, 13%);
     /* height: 35%; */
-    background-color: #575757;
+    background-color: var(--nb_bg_color);
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
     background-image: url(../asserts/img/asfalt-dark.png);
@@ -156,15 +156,15 @@ hr {
 }
 
 #sideBarContent p {
-    color: #ede3e7;
+    color: var(--nb_logo_color);
 }
 
 #sideBarContent ul li a {
-    color: #fc8c23;
+    color: var(--nb_marker_color);
 }
 
 #sideBarContent ul li a:hover {
-    color: #10aec2;
+    color: var(--nb_link_bg_color);
 }
 
 #sideBarContent li {
@@ -184,7 +184,7 @@ hr {
     text-decoration: none;
     text-align: center;
     font-weight: 500;
-    color: #ad9e5f;
+    color: var(--nb_marker_color);
 }
 
 #contact a .icon {
@@ -194,20 +194,20 @@ hr {
 
 #contact a:hover {
     transform: scale(1.2);
-    color: #fc8c23;
+    color: var(--nb_link_bg_color);
 }
 
 #contact span p {
-    color: #fc8c23;
+    color: var(nb_marker_color);
 }
 
 #about {
     position: static;
     width: 70%;
-    margin: 0 15% 8% 15%;
+    margin: 0 15% 3% 15%;
     padding: 2% 10%;
     background-image: url(../asserts/img/bg_texture.png);
-    background-color: #e9ddb6;
+    background-color: var(--block_color);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     z-index: auto;
 }
@@ -215,17 +215,17 @@ hr {
 #goToEduExp {
     position: absolute;
     margin-top: -100px;
-    top: 75%;
+    top: 69%;
     left: 15%;
 }
 
 #eduExp {
     position: static;
     width: 70%;
-    margin: 0 15% 8% 15%;
+    margin: 0 15% 3% 15%;
     padding: 2% 10%;
     background-image: url(../asserts/img/bg_texture.png);
-    background-color: #e9ddb6;
+    background-color: var(--block_color);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -237,24 +237,12 @@ hr {
 }
 
 #download {
-    position: absolute;
-    width: 70%;
-    height: 25%;
-    top: 235%;
-    left: 15%;
-    padding: 3% 10%;
-    background-image: url(../asserts/img/bg_texture.png);
-    background-color: #e9ddb6;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-#download {
     position: static;
     width: 70%;
     margin: 0 15% 0 15%;
     padding: 2% 10%;
     background-image: url(../asserts/img/bg_texture.png);
-    background-color: #e9ddb6;
+    background-color: var(--block_color);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -263,6 +251,7 @@ hr {
     line-height: 1.5em;
     /* text-indent: 4em; */
     margin-left: 2em;
+    color: var(--text_color);
 }
 
 .dropcap:first-letter {
@@ -281,12 +270,13 @@ footer {
     position: static;
     width: 100%;
     margin-top: 0;
-    padding: 5% 0;
-    background-color: #212121;
+    padding: 3% 0;
+    background-color: var(--nb_bg_color);
 }
 
 footer p {
     margin: 0;
     text-align: center;
-    color: #ede3e7;
+    font-size: 110%;
+    color: var(--nb_marker_color);
 }
