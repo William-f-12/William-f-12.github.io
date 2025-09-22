@@ -21,7 +21,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
-<body class="dark-mode">
+<body class="bright-mode">
     <header>
         <!-- Used for JavaScript dynamic loading, not using anymore, see load_navbar.js -->
         <!-- <div id="navbarContainer"></div> -->
@@ -61,8 +61,8 @@
                         <span class="text">Gallery</span>
                     </a>
                 </li>
-                <li>
-                    <a href="#">
+                <li id="settingsBtn">
+                    <a>
                         <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
                         <span class="text">Settings</span>
                     </a>
@@ -92,6 +92,16 @@
             </div>
         </a>
     </section>
+
+    <div id="settingsWin">
+        <div id="setting-content">
+            <span id="closeSettings">&times;</span>
+            <h2>Page Settings</h2>
+            <!-- Here you can place theme switching and other settings -->
+            <!-- <button onclick="toggleTheme()">Toggle Theme</button> -->
+        </div>
+    </div>
+
 </body>
 
 </html>

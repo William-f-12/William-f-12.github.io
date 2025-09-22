@@ -104,3 +104,49 @@
     background: var(--nb_marker_color);
     border: var(--nb_bg_color) solid 5px;
 }
+
+#settingsWin {
+    position: fixed;
+    /* z-index: 9999; */
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#setting-content {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    padding: 2em;
+    color: var(--text_color);
+    background: var(--nb_link_bg_color);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#closeSettings {
+    position: absolute;
+    right: -1%;
+    top: -1%;
+    width: 60px;
+    height: 60px;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--nb_bg_color);
+    background: var(--nb_marker_color);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#closeSettings:hover {
+    transform: scale(1.2);
+    color: var(--nb_logo_color);
+}

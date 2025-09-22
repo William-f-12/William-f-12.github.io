@@ -51,3 +51,41 @@ function moveIndicatorBack() {
 }
 
 navbar.addEventListener("mouseout", moveIndicatorBack);
+
+// Setting window functionality
+
+window.addEventListener('DOMContentLoaded', function () {
+    var settingsBtn = document.getElementById('settingsBtn');
+    var settingsWin = document.getElementById('settingsWin');
+    var closeSettings = document.getElementById('closeSettings');
+    if (settingsBtn && settingsWin && closeSettings) {
+        settingsBtn.onclick = function () {
+            pageLink = document.querySelector("#settingsBtn")
+            settingsWin.style.display = 'flex';
+        };
+        closeSettings.onclick = function () {
+            pageLink = document.querySelector("#curPage")
+            moveIndicatorBack();
+            settingsWin.style.display = 'none';
+        };
+        settingsWin.onclick = function (e) {
+            if (e.target === settingsWin) {
+                pageLink = document.querySelector("#curPage")
+                moveIndicatorBack();
+                settingsWin.style.display = 'none';
+            }
+        };
+    }
+});
+
+// switch theme
+function toggleTheme() {
+    const html = document.documentElement;
+    if (html.classList.contains('dark-mode')) {
+        html.classList.remove('dark-mode');
+        localStorage.setItem('theme', 'light');
+    } else {
+        html.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark');
+    }
+}
