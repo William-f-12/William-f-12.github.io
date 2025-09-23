@@ -75,4 +75,38 @@ window.addEventListener('DOMContentLoaded', function () {
             }
         };
     }
+
+    // theme switching functionality
+    var brightBtn = document.getElementById('brightMode');
+    var darkBtn = document.getElementById('darkMode');
+    var sunsetBtn = document.getElementById('sunsetMode');
+    function setTheme(mode) {
+        const body = document.body;
+        if (mode === 'bright') {
+            body.className = 'bright-mode';
+            localStorage.setItem('theme', 'bright');
+        } else if (mode === 'dark') {
+            body.className = 'dark-mode';
+            localStorage.setItem('theme', 'dark');
+        } else if (mode === 'sunset') {
+            body.className = 'sunset-mode';
+            localStorage.setItem('theme', 'sunset');
+        }
+    }
+    if (brightBtn) brightBtn.onclick = function () { setTheme('bright'); };
+    if (darkBtn) darkBtn.onclick = function () { setTheme('dark'); };
+    if (sunsetBtn) sunsetBtn.onclick = function () { setTheme('sunset'); };
+
+    // auto apply theme on page load
+    (function () {
+        const savedTheme = localStorage.getItem('theme');
+        const body = document.body;
+        if (savedTheme === 'dark') {
+            body.className = 'dark-mode';
+        } else if (savedTheme === 'bright') {
+            body.className = 'bright-mode';
+        } else if (savedTheme === 'sunset') {
+            body.className = 'sunset-mode';
+        }
+    })();
 });

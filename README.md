@@ -26,7 +26,8 @@
 2. Change the entry page to about page.
 3. Update the personal photo in about page, add the tiny-chat project experience, add relevant courses and update the downloadable files.
 4. Update the css file of about page. Now the background of each part will move with the text.
-5. Adding the setting window.
+5. Added the setting window.
+6. Added the theme switching function.
 
 <br/><br/><br/>
 
@@ -59,3 +60,4 @@
 3. 更改了关于我页面的个人照片，增加了tiny-chat的经历，增加了专业相关课程，并更新了可下载文件。
 4. 修改了关于我页面的css文件，现在各个板块的背景会跟随文字变换长度。
 5. 增加了设置窗口。
+6. 增加了切换主题颜色功能。
