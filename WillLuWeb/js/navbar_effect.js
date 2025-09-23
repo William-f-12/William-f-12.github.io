@@ -53,7 +53,6 @@ function moveIndicatorBack() {
 navbar.addEventListener("mouseout", moveIndicatorBack);
 
 // Setting window functionality
-
 window.addEventListener('DOMContentLoaded', function () {
     var settingsBtn = document.getElementById('settingsBtn');
     var settingsWin = document.getElementById('settingsWin');
@@ -77,15 +76,3 @@ window.addEventListener('DOMContentLoaded', function () {
         };
     }
 });
-
-// switch theme
-function toggleTheme() {
-    const html = document.documentElement;
-    if (html.classList.contains('dark-mode')) {
-        html.classList.remove('dark-mode');
-        localStorage.setItem('theme', 'light');
-    } else {
-        html.classList.add('dark-mode');
-        localStorage.setItem('theme', 'dark');
-    }
-}

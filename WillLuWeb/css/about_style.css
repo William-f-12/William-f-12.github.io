@@ -184,7 +184,7 @@ hr {
     text-decoration: none;
     text-align: center;
     font-weight: 500;
-    color: var(--nb_marker_color);
+    color: var(--nb_link_bg_color);
 }
 
 #contact a .icon {
@@ -194,7 +194,7 @@ hr {
 
 #contact a:hover {
     transform: scale(1.2);
-    color: var(--nb_link_bg_color);
+    color: var(--nb_marker_color);
 }
 
 #contact span p {
@@ -277,6 +277,6 @@ footer {
 footer p {
     margin: 0;
     text-align: center;
-    font-size: 110%;
+    font-size: 130%;
     color: var(--nb_marker_color);
 }
