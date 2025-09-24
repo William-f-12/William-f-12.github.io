@@ -39,3 +39,17 @@
     --a_color_hover: #99cdd8;
     --block_color: #fde8d3;
 }
+
+.cottonCandy-mode {
+    --nb_bg_color: #aedefc;
+    --nb_logo_color: #7e6bc4;
+    --nb_link_bg_color: #fccde2;
+    --nb_marker_color: #7e6bc4;
+
+    --bg_color: #fce5f6;
+    --text_color: #4a266a;
+    --h1_color: #1251a3;
+    --a_color: #7e6bc4;
+    --a_color_hover: #fb929e;
+    --block_color: #e7f8fb;
+}

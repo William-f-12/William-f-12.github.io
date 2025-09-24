@@ -16,7 +16,6 @@ body {
     justify-content: center;
     align-items: center;
     background-image: url(../asserts/img/bright-squares.png);
-    transition: background-color .5s ease-in;
     background-color: var(--bg_color);
 }
 

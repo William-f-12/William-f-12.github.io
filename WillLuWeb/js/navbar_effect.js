@@ -80,6 +80,7 @@ window.addEventListener('DOMContentLoaded', function () {
     var brightBtn = document.getElementById('brightMode');
     var darkBtn = document.getElementById('darkMode');
     var sunsetBtn = document.getElementById('sunsetMode');
+    var cottonCandyBtn = document.getElementById('cottonCandyMode');
     function setTheme(mode) {
         const body = document.body;
         if (mode === 'bright') {
@@ -91,11 +92,15 @@ window.addEventListener('DOMContentLoaded', function () {
         } else if (mode === 'sunset') {
             body.className = 'sunset-mode';
             localStorage.setItem('theme', 'sunset');
+        } else if (mode === 'cottonCandy') {
+            body.className = 'cottonCandy-mode';
+            localStorage.setItem('theme', 'cottonCandy');
         }
     }
     if (brightBtn) brightBtn.onclick = function () { setTheme('bright'); };
     if (darkBtn) darkBtn.onclick = function () { setTheme('dark'); };
     if (sunsetBtn) sunsetBtn.onclick = function () { setTheme('sunset'); };
+    if (cottonCandyBtn) cottonCandyBtn.onclick = function () { setTheme('cottonCandy'); };
 
     // auto apply theme on page load
     (function () {
@@ -107,6 +112,8 @@ window.addEventListener('DOMContentLoaded', function () {
             body.className = 'bright-mode';
         } else if (savedTheme === 'sunset') {
             body.className = 'sunset-mode';
+        } else if (savedTheme === 'cottonCandy') {
+            body.className = 'cottonCandy-mode';
         }
     })();
 });
