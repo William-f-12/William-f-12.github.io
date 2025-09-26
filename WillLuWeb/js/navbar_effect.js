@@ -79,8 +79,9 @@ window.addEventListener('DOMContentLoaded', function () {
     // theme switching functionality
     var brightBtn = document.getElementById('brightMode');
     var darkBtn = document.getElementById('darkMode');
-    var sunsetBtn = document.getElementById('sunsetMode');
     var cottonCandyBtn = document.getElementById('cottonCandyMode');
+    var sakuraBtn = document.getElementById('sakuraMode');
+    var cyberpunkBtn = document.getElementById('cyberpunkMode');
     function setTheme(mode) {
         const body = document.body;
         if (mode === 'bright') {
@@ -89,18 +90,22 @@ window.addEventListener('DOMContentLoaded', function () {
         } else if (mode === 'dark') {
             body.className = 'dark-mode';
             localStorage.setItem('theme', 'dark');
-        } else if (mode === 'sunset') {
-            body.className = 'sunset-mode';
-            localStorage.setItem('theme', 'sunset');
+        } else if (mode === 'sakura') {
+            body.className = 'sakura-mode';
+            localStorage.setItem('theme', 'sakura');
         } else if (mode === 'cottonCandy') {
             body.className = 'cottonCandy-mode';
             localStorage.setItem('theme', 'cottonCandy');
+        } else if (mode === 'cyberpunk') {
+            body.className = 'cyberpunk-mode';
+            localStorage.setItem('theme', 'cyberpunk');
         }
     }
     if (brightBtn) brightBtn.onclick = function () { setTheme('bright'); };
     if (darkBtn) darkBtn.onclick = function () { setTheme('dark'); };
-    if (sunsetBtn) sunsetBtn.onclick = function () { setTheme('sunset'); };
+    if (sakuraBtn) sakuraBtn.onclick = function () { setTheme('sakura'); };
     if (cottonCandyBtn) cottonCandyBtn.onclick = function () { setTheme('cottonCandy'); };
+    if (cyberpunkBtn) cyberpunkBtn.onclick = function () { setTheme('cyberpunk'); };
 
     // auto apply theme on page load
     (function () {
@@ -110,10 +115,12 @@ window.addEventListener('DOMContentLoaded', function () {
             body.className = 'dark-mode';
         } else if (savedTheme === 'bright') {
             body.className = 'bright-mode';
-        } else if (savedTheme === 'sunset') {
-            body.className = 'sunset-mode';
+        } else if (savedTheme === 'sakura') {
+            body.className = 'sakura-mode';
         } else if (savedTheme === 'cottonCandy') {
             body.className = 'cottonCandy-mode';
+        } else if (savedTheme === 'cyberpunk') {
+            body.className = 'cyberpunk-mode';
         }
     })();
 });

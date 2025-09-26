@@ -26,30 +26,44 @@
     --block_color: #242635;
 }
 
-.sunset-mode {
-    --nb_bg_color: #fff5a5;
-    --nb_logo_color: #ff6464;
-    --nb_link_bg_color: #ffaa64;
-    --nb_marker_color: #81021f;
-
-    --bg_color: #daebe3;
-    --text_color: #212121;
-    --h1_color: #212121;
-    --a_color: #cfc6c4;
-    --a_color_hover: #99cdd8;
-    --block_color: #fde8d3;
-}
-
 .cottonCandy-mode {
     --nb_bg_color: #aedefc;
-    --nb_logo_color: #7e6bc4;
-    --nb_link_bg_color: #fccde2;
+    --nb_logo_color: #5742a4;
+    --nb_link_bg_color: #ffc1dd;
     --nb_marker_color: #7e6bc4;
 
-    --bg_color: #fce5f6;
+    --bg_color: #fcdefa;
     --text_color: #4a266a;
-    --h1_color: #1251a3;
+    --h1_color: #f380a5;
     --a_color: #7e6bc4;
     --a_color_hover: #fb929e;
-    --block_color: #e7f8fb;
+    --block_color: #eef8fa;
+}
+
+.sakura-mode {
+    --nb_bg_color: #fac4cf;
+    --nb_logo_color: #8072e6;
+    --nb_link_bg_color: #fdeaeb;
+    --nb_marker_color: #9b8ffa;
+
+    --bg_color: #fcd8e0;
+    --text_color: #2E2E2E;
+    --h1_color: #1E1E2F;
+    --a_color: #FF6F91;
+    --a_color_hover: #91dc93;
+    --block_color: #f2edf1;
+}
+
+.cyberpunk-mode {
+    --nb_bg_color: #ffea00;
+    --nb_logo_color: #008cff;
+    --nb_link_bg_color: #0D0D0D;
+    --nb_marker_color: #e94560;
+
+    --bg_color: #0B0C10;
+    --text_color: #eaeaea;
+    --h1_color: #FFB703;
+    --a_color: #00FFFF;
+    --a_color_hover: #ff2e63;
+    --block_color: #16213e;
 }
