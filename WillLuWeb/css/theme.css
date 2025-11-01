@@ -4,12 +4,14 @@
     --nb_link_bg_color: #FFB74D;
     --nb_marker_color: #BF360C;
 
-    --bg_color: #e8dfe0;
+    --bg_color: #f7f0f1;
     --text_color: #212121;
     --h1_color: #81021f;
     --a_color: #EF6C00;
     --a_color_hover: #26C6DA;
     --block_color: #ddd6c1;
+
+    --bg-img: url(../asserts/img/bright_top_bg.png)
 }
 
 .dark-mode {
@@ -24,6 +26,8 @@
     --a_color: #7da0ca;
     --a_color_hover: #c1e8ff;
     --block_color: #242635;
+
+    --bg-img: url(../asserts/img/dark_top_bg.png)
 }
 
 .cottonCandy-mode {
@@ -38,13 +42,15 @@
     --a_color: #7e6bc4;
     --a_color_hover: #fb929e;
     --block_color: #eef8fa;
+
+    --bg-img: url(../asserts/img/candy_top_bg.png)
 }
 
 .sakura-mode {
     --nb_bg_color: #fac4cf;
-    --nb_logo_color: #8072e6;
+    --nb_logo_color: #ffffff;
     --nb_link_bg_color: #fdeaeb;
-    --nb_marker_color: #9b8ffa;
+    --nb_marker_color: #bb70ec;
 
     --bg_color: #fcd8e0;
     --text_color: #2E2E2E;
@@ -52,18 +58,22 @@
     --a_color: #FF6F91;
     --a_color_hover: #91dc93;
     --block_color: #f2edf1;
+
+    --bg-img: url(../asserts/img/sakura_top_bg.png)
 }
 
 .cyberpunk-mode {
     --nb_bg_color: #ffea00;
     --nb_logo_color: #008cff;
     --nb_link_bg_color: #0D0D0D;
-    --nb_marker_color: #e94560;
+    --nb_marker_color: #FF3131;
 
-    --bg_color: #0B0C10;
+    --bg_color: #0c1507;
     --text_color: #eaeaea;
-    --h1_color: #FFB703;
+    --h1_color: #ffea00;
     --a_color: #00FFFF;
     --a_color_hover: #ff2e63;
     --block_color: #16213e;
+
+    --bg-img: url(../asserts/img/cyber_top_bg.png)
 }

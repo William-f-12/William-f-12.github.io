@@ -62,22 +62,13 @@ hr {
 #bg_img {
     position: absolute;
     inset: 0;
-    filter: sepia(80%);
-    background-image: url(../asserts/img/about_top_bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 60%;
+    background-image: var(--bg-img);
+    background-size: 555px 280px;
+    background-repeat: repeat;
+    background-position: 0 9.5%;
     background-attachment: fixed;
     overflow: hidden;
 }
-
-/* #bg_img img {
-    position: relative;
-    width: 100%;
-    top: -100%;
-    filter: sepia(90%);
-    background-attachment: fixed;
-} */
 
 #intro {
     position: absolute;
@@ -145,7 +136,6 @@ hr {
     background-color: var(--nb_bg_color);
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-    background-image: url(../asserts/img/asfalt-dark.png);
 }
 
 #sideBarContent {
