@@ -28,6 +28,7 @@
 4. Update the css file of about page. Now the background of each part will move with the text.
 5. Added the setting window.
 6. Added the theme switching function and few theme options.
+7. Added background picture for each theme. Update resume and CV.
 
 <br/><br/><br/>
 
@@ -61,3 +62,4 @@
 4. 修改了关于我页面的css文件，现在各个板块的背景会跟随文字变换长度。
 5. 增加了设置窗口。
 6. 增加了切换主题颜色功能。并且增加了主题配色选项。
+7. 为每个颜色主题添加了背景图片。更新了简历。
