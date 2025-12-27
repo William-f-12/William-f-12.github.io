@@ -193,7 +193,7 @@ hr {
 #about {
     position: static;
     width: 70%;
-    margin: 0 15% 3% 15%;
+    margin: 0 15% 0 15%;
     padding: 2% 10%;
     background-image: url(../asserts/img/bg_texture.png);
     background-color: var(--block_color);
@@ -202,16 +202,14 @@ hr {
 }
 
 #goToEduExp {
-    position: absolute;
-    margin-top: -100px;
-    top: 69%;
-    left: 15%;
+    position: static;
+    margin-bottom: 5%;
 }
 
 #eduExp {
     position: static;
     width: 70%;
-    margin: 0 15% 3% 15%;
+    margin: 0 15% 0 15%;
     padding: 2% 10%;
     background-image: url(../asserts/img/bg_texture.png);
     background-color: var(--block_color);
@@ -219,10 +217,8 @@ hr {
 }
 
 #goToDownload {
-    position: absolute;
-    margin-top: -100px;
-    top: 185%;
-    left: 15%;
+    position: static;
+    margin-bottom: 5%;
 }
 
 #download {
