@@ -232,7 +232,7 @@ hr {
 }
 
 .description {
-    font-size: 1.6vh;
+    font-size: clamp(0.75rem, 1rem + 0.1vw, 1.15rem);
     line-height: 1.5em;
     /* text-indent: 4em; */
     margin-left: 2em;
