@@ -12,10 +12,6 @@
     <title>William Lu</title>
     <link rel="stylesheet" href="../css/theme.css">
     <link rel="stylesheet" href="../css/home_style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Code for Navigation Bar Credit: https://ionic.io/ionicons -->
-    <!-- Used for JavaScript dynamic loading, not using anymore, see load_navbar.js -->
-    <!-- <script src="../js/load_navbar.js"></script> -->
     <link rel="stylesheet" href="../css/navbar_style.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -23,8 +19,6 @@
 
 <body class="bright-mode">
     <header>
-        <!-- Used for JavaScript dynamic loading, not using anymore, see load_navbar.js -->
-        <!-- <div id="navbarContainer"></div> -->
         <nav id="navbar">
             <div id="logo">
                 <a href="home.html">William Lu</a>
@@ -73,25 +67,93 @@
         <script src="../js/navbar_effect.js"></script>
     </header>
 
-    <section id="links">
-        <a href="../pages/about.html" style="text-decoration: none;">
-            <div id="aboutMe">
-                <p>About Me</p>
+    <section id="terminalSection">
+        <div id="terminal">
+            <div id="terminalTitleBar">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="title">william@home — bash</span>
             </div>
-        </a>
-
-        <a href="https://github.com/William-f-12" target="_blank" style="text-decoration: none;">
-            <div id="github">
-                <p>My Github</p>
+            <div id="terminalOutput">
+                <div class="line output">Welcome to William's Terminal v1.0</div>
+                <div class="line output">Type "help" to see available commands.</div>
+                <div class="line output">Try not to break anything :)</div>
             </div>
-        </a>
-
-        <a href="../pages/gallery.html" style="text-decoration: none;">
-            <div id="gallery">
-                <p>My Pictures</p>
+            <div id="terminalInputWrapper">
+                <span class="prompt">william@home:~$</span>
+                <input type="text" id="terminalInput" placeholder="type a command..." autofocus>
             </div>
-        </a>
+        </div>
+        <div id="scrollHint">scroll for more ▼</div>
     </section>
+
+    <div id="goToProjects"></div>
+
+    <section id="projectSection">
+        <h1>Project Experience</h1>
+        <div class="projectGrid">
+            <div class="project-card">
+                <h2>Tiny-Chat</h2>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">LLM</span>
+                    <span class="tag">Multi-Agent</span>
+                </div>
+                <p>Multi-agent conversational environment where LLMs simulate social interactions like negotiation and collaboration.</p>
+                <a href="https://github.com/William-f-12" target="_blank">View on GitHub &rarr;</a>
+            </div>
+
+            <div class="project-card">
+                <h2>SimCLR</h2>
+                <div class="tags">
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">Self-Supervised</span>
+                </div>
+                <p>SimCLR pipeline from scratch: data augmentation, ResNet encoder, NT-Xent loss, and evaluation.</p>
+                <a href="https://github.com/William-f-12" target="_blank">View on GitHub &rarr;</a>
+            </div>
+
+            <div class="project-card">
+                <h2>Library of Meialia</h2>
+                <div class="tags">
+                    <span class="tag">Unity</span>
+                    <span class="tag">C#</span>
+                    <span class="tag">Roguelike</span>
+                </div>
+                <p>Stand-alone roguelike game with character abilities and language localization.</p>
+                <a href="https://store.steampowered.com/app/3102950/Library_of_Meialia/?beta=0" target="_blank">View on Steam &rarr;</a>
+            </div>
+
+            <div class="project-card">
+                <h2>Job Application Manager</h2>
+                <div class="tags">
+                    <span class="tag">Django</span>
+                    <span class="tag">REST API</span>
+                    <span class="tag">SQLite</span>
+                </div>
+                <p>Full-stack web app for tracking job applications with RESTful APIs and relational database schemas.</p>
+                <a href="https://github.com/William-f-12" target="_blank">View on GitHub &rarr;</a>
+            </div>
+
+            <div class="project-card">
+                <h2>Mental Health NLP</h2>
+                <div class="tags">
+                    <span class="tag">Deep Learning</span>
+                    <span class="tag">NLP</span>
+                    <span class="tag">IEEE</span>
+                </div>
+                <p>Compared DL models for detecting mental health from social media posts. Co-published IEEE paper.</p>
+                <a href="http://doi.org/10.1109/CompAuto54408.2021.00011" target="_blank">View Paper &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="projectFooterSpacer"></div>
+
+    <footer>
+        <p>&copy; 2024 William Lu. All rights reserved.</p>
+    </footer>
 
     <div id="settingsWin">
         <div id="setting-content">
@@ -119,6 +181,7 @@
         </div>
     </div>
 
+    <script src="../js/home_effect.js"></script>
 </body>
 
 </html>
