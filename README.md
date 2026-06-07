@@ -21,7 +21,7 @@
 6. Updated the About Me page to add an introduction and special effects.
 7. Finished the About Me page.
 
-## **Third Phase: <- Current Phase**
+## **Third Phase:**
 1. Added some navigation nodes to the homepage and initially improved its appearance.
 2. Change the entry page to about page.
 3. Update the personal photo in about page, add the tiny-chat project experience, add relevant courses and update the downloadable files.
@@ -29,6 +29,10 @@
 5. Added the setting window.
 6. Added the theme switching function and few theme options.
 7. Added background picture for each theme. Update resume and CV.
+
+## **Fourth Phase: <- Current Phase**
+1. Start using coding agent for this personal website project.
+2. Re-design the Notes page, and add two new notes website links.
 
 <br/><br/><br/>
 
@@ -55,7 +59,7 @@
 6. 更新了关于我页面，添加了介绍与特效。
 7. 完成了关于我页面。
 
-## **第三阶段：<- 目前阶段**
+## **第三阶段：**
 1. 为主页添加了部分转跳节点，初步美化了了外观。
 2. 更改进入页面为About页面。
 3. 更改了关于我页面的个人照片，增加了tiny-chat的经历，增加了专业相关课程，并更新了可下载文件。
@@ -63,3 +67,7 @@
 5. 增加了设置窗口。
 6. 增加了切换主题颜色功能。并且增加了主题配色选项。
 7. 为每个颜色主题添加了背景图片。更新了简历。
+
+## **第四阶段：<- 目前阶段**
+1. 开始使用coding agent来帮助开发/更新。
+2. 美化了Notes页面，然后加上了两个笔记。
