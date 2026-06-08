@@ -34,6 +34,7 @@
 1. Start using coding agent for this personal website project.
 2. Re-design the Notes page, and add two new notes website links.
 3. Re-design the Home page: interactive terminal and project cards.
+4. Update the Bio and project description in About page. Adjust the Layout.
 
 <br/><br/><br/>
 
@@ -73,3 +74,4 @@
 1. 开始使用coding agent来帮助开发/更新。
 2. 美化了Notes页面，然后加上了两个笔记。
 3. 重新设计了Home页面，包含交互式命令行和项目简介卡片。
+4. 更新了About页面的描述与排版。

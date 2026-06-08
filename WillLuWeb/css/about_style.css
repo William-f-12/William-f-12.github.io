@@ -206,6 +206,11 @@ hr {
     margin-bottom: 5%;
 }
 
+#goToSkills {
+    position: static;
+    margin-bottom: 5%;
+}
+
 #eduExp {
     position: static;
     width: 70%;
@@ -229,6 +234,28 @@ hr {
     background-image: url(../asserts/img/bg_texture.png);
     background-color: var(--block_color);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#skills {
+    position: static;
+    width: 70%;
+    margin: 0 15% 0 15%;
+    padding: 2% 10%;
+    background-image: url(../asserts/img/bg_texture.png);
+    background-color: var(--block_color);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: var(--h1_color);
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.skill-group {
+    margin-bottom: 1.5rem;
 }
 
 .description {

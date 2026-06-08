@@ -11,7 +11,20 @@
     --a_color_hover: #26C6DA;
     --block_color: #ddd6c1;
 
-    --bg-img: url(../asserts/img/bright_top_bg.png)
+    --bg-img: url(../asserts/img/bright_top_bg.png);
+
+    /* Terminal: Dracula */
+    --term_bg: #282a36;
+    --term_titlebar_bg: #1e1f29;
+    --term_title: #6272a4;
+    --term_text: #f8f8f2;
+    --term_prompt: #bd93f9;
+    --term_output: #50fa7b;
+    --term_error: #ff5555;
+    --term_input_text: #f8f8f2;
+    --term_border: #44475a;
+    --term_selection: #44475a;
+    --term_caret: #bd93f9;
 }
 
 .dark-mode {
@@ -27,7 +40,20 @@
     --a_color_hover: #c1e8ff;
     --block_color: #242635;
 
-    --bg-img: url(../asserts/img/dark_top_bg.png)
+    --bg-img: url(../asserts/img/dark_top_bg.png);
+
+    /* Terminal: Nord */
+    --term_bg: #2e3440;
+    --term_titlebar_bg: #3b4252;
+    --term_title: #4c566a;
+    --term_text: #d8dee9;
+    --term_prompt: #81a1c1;
+    --term_output: #a3be8c;
+    --term_error: #bf616a;
+    --term_input_text: #d8dee9;
+    --term_border: #434c5e;
+    --term_selection: #434c5e;
+    --term_caret: #81a1c1;
 }
 
 .cottonCandy-mode {
@@ -43,7 +69,20 @@
     --a_color_hover: #fb929e;
     --block_color: #eef8fa;
 
-    --bg-img: url(../asserts/img/candy_top_bg.png)
+    --bg-img: url(../asserts/img/candy_top_bg.png);
+
+    /* Terminal: Cotton Candy */
+    --term_bg: #ede0f6;
+    --term_titlebar_bg: #e2d0ee;
+    --term_title: #a088b8;
+    --term_text: #3a3050;
+    --term_prompt: #d04090;
+    --term_output: #5098d0;
+    --term_error: #e04080;
+    --term_input_text: #3a3050;
+    --term_border: #dcc8e8;
+    --term_selection: #e8d8f2;
+    --term_caret: #d04090;
 }
 
 .sakura-mode {
@@ -59,7 +98,20 @@
     --a_color_hover: #91dc93;
     --block_color: #f2edf1;
 
-    --bg-img: url(../asserts/img/sakura_top_bg.png)
+    --bg-img: url(../asserts/img/sakura_top_bg.png);
+
+    /* Terminal: Hanabira (light) */
+    --term_bg: #fdf6f9;
+    --term_titlebar_bg: #f5e8f0;
+    --term_title: #b898b0;
+    --term_text: #3d2a3e;
+    --term_prompt: #d4305a;
+    --term_output: #1a9a30;
+    --term_error: #e04050;
+    --term_input_text: #3d2a3e;
+    --term_border: #ecd8e4;
+    --term_selection: #f0d4e0;
+    --term_caret: #d4305a;
 }
 
 .cyberpunk-mode {
@@ -75,5 +127,18 @@
     --a_color_hover: #ff2e63;
     --block_color: #16213e;
 
-    --bg-img: url(../asserts/img/cyber_top_bg.png)
+    --bg-img: url(../asserts/img/cyber_top_bg.png);
+
+    /* Terminal: Matrix */
+    --term_bg: #000000;
+    --term_titlebar_bg: #0a0a0a;
+    --term_title: #555555;
+    --term_text: #00ff41;
+    --term_prompt: #ffea00;
+    --term_output: #00ff41;
+    --term_error: #FF3131;
+    --term_input_text: #00ff41;
+    --term_border: #1a1a1a;
+    --term_selection: #003300;
+    --term_caret: #ffea00;
 }
