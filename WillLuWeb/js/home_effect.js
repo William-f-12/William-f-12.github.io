@@ -52,7 +52,7 @@ const commands = {
         desc: 'Who is William Lu',
         hidden: false,
         action: () => {
-            return 'William Lu\nCS & Math @ UIUC | Sophomore | GPA 4.0\nInterests: AI, Game Dev, Systems\nLocation: Champaign, IL';
+            return 'William Lu\nCS & Math @ UIUC | Senior | GPA 4.0\nInterests: ML, Agent, Game Dev, Rock Music, Photography, EVA\nMany A+ : )\n(Try "about" to learn more)';
         }
     },
     projects: {
@@ -336,6 +336,67 @@ const commands = {
                 return 'That\'s the fake flag. You knew that already, right?\nKeep digging — the real one is out there...';
             }
             return 'Invalid flag. Keep trying!';
+        }
+    },
+    pinkfloyd: {
+        hidden: true,
+        action: () => {
+            return '    ─── ♪ ─────── ♪ ───\n\n    Hello? Is there anybody in there?\n    Just nod if you can hear me.\n    Is there anyone home?\n\n    There is no pain, you are receding.\n    A distant ship smoke on the horizon.\n    You are only coming through in waves.\n\n    I have become comfortably numb.\n\n    Oooh, that Gilmour solo...\n    — Pink Floyd, The Wall (1979)';
+        }
+    },
+    deeppurple: {
+        hidden: true,
+        action: () => {
+            return '  Smoke on the Water\n\nGuitar Riff:\n  E├─0─3─5──0─3─6─5──0─3─5──3─0─┤\n  A├─────────────────────────────┤\n  D├─────────────────────────────┤\n\nSmoke on the water, a fire in the sky.\n— Deep Purple, Machine Head (1972)';
+        }
+    },
+    ledzeppelin: {
+        hidden: true,
+        action: () => {
+            return '         ★\n        /|\n       / |\n      /  |\n     /   |\n    /    |\n   /     |\n  /      |\n /       |\n/________|\n\nThere\'s a lady who\'s sure\nall that glitters is gold,\nand she\'s buying a stairway to heaven.\n\nWhen she gets there she knows,\nif the stores are all closed,\nwith a word she can get what she came for.\n\n— Led Zeppelin, IV (1971)';
+        }
+    },
+    gnr: {
+        hidden: true,
+        action: () => {
+            return 'Welcome to the jungle!\nWe\'ve got fun \'n\' games.\nWe got everything you want,\nhoney, we know the names.\n\nWelcome to the jungle,\nwatch it bring you to your\nsha-na-na-na-na-na-na-na knees, knees\n\n— Guns N\' Roses, Appetite for Destruction (1987)';
+        }
+    },
+    mygo: {
+        hidden: true,
+        action: () => {
+            return '  __  __       ____  ___\n |  \\/  |_  __/ ___|/ _ \\\n | |\\/| | \\/ / |  _| | | |\n | |  | |   /| |_| | |_| |\n |_|  |_|\\_\\  \\____|\\___/\n\n迷子でもいい、迷子でも進め。\nIt\'s okay to be lost, keep moving forward.\n— MyGO!!!!!';
+        }
+    },
+    eva: {
+        hidden: true,
+        action: () => {
+            return '┌──────────────────────────┐\n│                          │\n│   Neon Genesis           │\n│   Evangelion             │\n│                          │\n│   God\'s in his heaven,   │\n│   all\'s right with       │\n│   the world.             │\n│                          │\n│   逃げちゃダメだ          │\n│   逃げちゃダメだ          │\n│   逃げちゃダメだ          │\n│                          │\n│   人類補完計画 進行中...   │\n│                          │\n└──────────────────────────┘';
+        }
+    },
+    congratulations: {
+        hidden: true,
+        action: () => {
+            return 'おめでとう！！\nおめでとう！！\nおめでとう！！\nおめでとう！！\nおめでとう！！\n\nCongratulations!\nCongratulations!\nCongratulations!\n\n— The End of Evangelion, 1997\n\n(You deserved this moment.)';
+        }
+    },
+    utada: {
+        hidden: true,
+        action: () => {
+            return '  Utada Hikaru  宇多田ヒカル\n\n"First Love" — 1999\n\n最後のキスはタバコのflavorがした\n苦くて悲しい香り\n\nYou are always gonna be my love.\nいつか誰かとまた恋に落ちても\nI\'ll remember to love,\nyou taught me how.\n\n— Hikaru Utada, First Love (1999)\n  One of the best-selling albums in Japanese history.';
+        }
+    },
+    'one-last-kiss': {
+        hidden: true,
+        action: () => {
+            setTimeout(() => { window.open('https://www.utadahikaru.jp/archive/pwqs-ahy4cgb/', '_blank'); }, 2000);
+            return '    One Last Kiss\n    ─────────────────────\n\n    Hikaru Utada — 2021\n    Evangelion: 3.0+1.0\n    Thrice Upon a Time\n\n    初めてのルーブルは\n    なんてことはなかったわ\n    私だけのモナリザ\n    もうとっくに出会ってたから\n\n    Oh, oh, oh, oh, oh\n    I love you more than\n    you\'ll ever know.\n\n    — One Last Kiss, Hikaru Utada\n      (Evangelion: 3.0+1.0, 2021)\n\n    さようなら全てのエヴァンゲリオン';
+        }
+    },
+    'beautiful-world': {
+        hidden: true,
+        action: () => {
+            return '    Beautiful World\n    ─────────────────────\n\n    Hikaru Utada — 2007\n    Evangelion: 1.0\n    You Are (Not) Alone\n\n    もしも願い一つだけ\n    叶うなら\n    君の側で眠らせて\n    どんな場所でもいいよ\n\n    It\'s only love\n    It\'s only love\n\n    Beautiful world,\n    迷わず君だけを見つめている\n    Beautiful boy,\n    自分の美しさまだ知らないの\n\n    — Beautiful World, Hikaru Utada\n      (Evangelion 1.0, 2007)';
         }
     }
 };
