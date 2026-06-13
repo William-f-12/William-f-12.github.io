@@ -27,6 +27,47 @@
     --term_caret: #bd93f9;
 }
 
+.eva-mode {
+    --nb_bg_color: #1a0a2e;
+    --nb_logo_color: #e53935;
+    --nb_link_bg_color: #4c2486;
+    --nb_marker_color: #76ff03;
+
+    --bg_color: #d26002;
+    --text_color: #08153f;
+    --h1_color: #4a148c;
+    --a_color: #9b300c;
+    --a_color_hover: #64dd17;
+    --block_color: #e8e2f0;
+
+    --bg-img: url(../asserts/img/bright_top_bg.png);
+
+    --term_bg: #0d0d1a;
+    --term_titlebar_bg: #1a0a2e;
+    --term_title: #ab47bc;
+    --term_text: #ede7f6;
+    --term_prompt: #ce93d8;
+    --term_output: #76ff03;
+    --term_error: #ff1744;
+    --term_input_text: #f5f0eb;
+    --term_border: #2d1452;
+    --term_selection: #4a1a7e;
+    --term_caret: #ce93d8;
+}
+
+.eva-mode #bg_img {
+    filter: contrast(140%) brightness(70%);
+}
+
+.eva-mode #bg_img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(150, 0, 10, 0.85);
+    mix-blend-mode: color;
+    pointer-events: none;
+}
+
 .dark-mode {
     --nb_bg_color: #161823;
     --nb_logo_color: #a393eb;

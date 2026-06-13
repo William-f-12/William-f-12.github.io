@@ -52,7 +52,7 @@ const commands = {
         desc: 'Who is William Lu',
         hidden: false,
         action: () => {
-            return 'William Lu\nCS & Math @ UIUC | Senior | GPA 4.0\nInterests: ML, Agent, Game Dev, Rock Music, Photography, EVA\nMany A+ : )\n(Try "about" to learn more)';
+            return 'William Lu\nCS & Math @ UIUC | Senior | GPA 4.0\nInterests: ML, Agent, Game Dev, Rock Music, Photography, EVA\n(Try "about" to learn more)';
         }
     },
     projects: {
@@ -150,7 +150,8 @@ const commands = {
                 sakura: 'sakura-mode',
                 candy: 'cottonCandy-mode',
                 cottoncandy: 'cottonCandy-mode',
-                cyberpunk: 'cyberpunk-mode'
+                cyberpunk: 'cyberpunk-mode',
+                eva: 'eva-mode'
             };
             const storageKeys = {
                 bright: 'bright',
@@ -158,7 +159,8 @@ const commands = {
                 sakura: 'sakura',
                 candy: 'cottonCandy',
                 cottoncandy: 'cottonCandy',
-                cyberpunk: 'cyberpunk'
+                cyberpunk: 'cyberpunk',
+                eva: 'eva'
             };
             if (!arg || !themes[arg.toLowerCase()]) {
                 return 'Usage: theme <bright|dark|sakura|candy|cyberpunk>\n(Try switching themes — some have hidden terminal colors!)';

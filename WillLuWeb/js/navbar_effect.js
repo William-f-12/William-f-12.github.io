@@ -99,6 +99,9 @@ window.addEventListener('DOMContentLoaded', function () {
         } else if (mode === 'cyberpunk') {
             body.className = 'cyberpunk-mode';
             localStorage.setItem('theme', 'cyberpunk');
+        } else if (mode === 'eva') {
+            body.className = 'eva-mode';
+            localStorage.setItem('theme', 'eva');
         }
     }
     if (brightBtn) brightBtn.onclick = function () { setTheme('bright'); };
@@ -121,6 +124,8 @@ window.addEventListener('DOMContentLoaded', function () {
             body.className = 'cottonCandy-mode';
         } else if (savedTheme === 'cyberpunk') {
             body.className = 'cyberpunk-mode';
+        } else if (savedTheme === 'eva') {
+            body.className = 'eva-mode';
         }
     })();
 });
