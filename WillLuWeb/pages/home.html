@@ -8,7 +8,8 @@
     <meta charset="UTF-8">
     <meta name="author" content="William Lu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home page of my personal website.">
+    <meta name="description"
+        content="William Lu's portfolio featuring software engineering, performance systems, AI, and GPU projects.">
     <title>William Lu</title>
     <link rel="stylesheet" href="../css/theme.css">
     <link rel="stylesheet" href="../css/home_style.css">
@@ -76,7 +77,8 @@
                 <span class="title">william@home — bash</span>
             </div>
             <div id="terminalOutput">
-                <div class="line output">Welcome to William's Terminal v1.0</div>
+                <div class="line output">William Lu — Mathematics &amp; Computer Science @ UIUC</div>
+                <div class="line output">Building performance tooling, AI systems, and GPU software.</div>
                 <div class="line output">Type "help" to see available commands.</div>
                 <div class="line output">Try not to break anything :)</div>
             </div>
@@ -91,30 +93,31 @@
     <div id="goToProjects"></div>
 
     <section id="projectSection">
-        <h1>Project Experience</h1>
+        <h1>Selected Experience &amp; Projects</h1>
         <div class="projectGrid">
             <div class="project-card">
-                <h2>TikTok AI Agent</h2>
+                <h2>TikTok Effect Performance</h2>
                 <div class="tags">
-                    <span class="tag">LangGraph</span>
-                    <span class="tag">Multi-Agent</span>
-                    <span class="tag">Profiling</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Perfetto</span>
+                    <span class="tag">ADB/UIAutomator</span>
                 </div>
-                <p>Built LangGraph-based multi-agent system to automatically analyze performance traces, identify
-                    bottlenecks and root causes, and perform code-level optimization with profiling feedback.</p>
-                <!-- <a href="https://github.com/William-f-12" target="_blank">View on GitHub &rarr;</a> -->
+                <p>Built an automated trace collection-to-report platform that replaced a 10-step manual workflow with
+                    one command and produced 1,200 traces across 482 effects and 6 device profiles. Designed agentic
+                    performance attribution and end-to-end SDK-to-JavaScript instrumentation for optimization
+                    prioritization.</p>
             </div>
 
             <div class="project-card">
-                <h2>CUDA Conv Kernel</h2>
+                <h2>CUDA Kernel Optimization</h2>
                 <div class="tags">
                     <span class="tag">CUDA</span>
-                    <span class="tag">Tensor Core</span>
-                    <span class="tag">GPU</span>
+                    <span class="tag">Tensor Cores</span>
+                    <span class="tag">Nsight</span>
                 </div>
-                <p>Implemented and optimized convolutional layer as matrix multiplication CUDA kernel using Tensor Core,
-                    shared memory tiling, constant memory caching, loop unrolling, and CUDA streams. Profiled with
-                    Nsight Compute &amp; Systems.</p>
+                <p>Optimized convolution as CUDA matrix multiplication using Tensor Cores, memory tiling, caching,
+                    loop unrolling, streams, and mixed precision. Reduced combined kernel time from 74.9 ms to 53 ms —
+                    a 29% reduction and 1.41&times; speedup at batch size 10,000.</p>
                 <a href="https://ece.illinois.edu/academics/courses/ece408" target="_blank">View Course Page &rarr;</a>
             </div>
 
@@ -125,10 +128,36 @@
                     <span class="tag">RISC-V</span>
                     <span class="tag">OS</span>
                 </div>
-                <p>Built a Unix-like kernel from scratch in a 3-person team using RISC-V and C, implementing
-                    multitasking, virtual memory, file system, 2-way associative cache, and pipe-based IPC with device
-                    drivers.</p>
+                <p>Led a 3-person team in building a Unix-like kernel in C for RISC-V, implementing multitasking,
+                    virtual memory, a file system, system calls, process management, pipe-based IPC, a 2-way
+                    set-associative cache, and device drivers.</p>
                 <a href="https://courses.grainger.illinois.edu/ece391/su2025/" target="_blank">View Course Page
+                    &rarr;</a>
+            </div>
+
+            <div class="project-card">
+                <h2>SimCLR in PyTorch</h2>
+                <div class="tags">
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">ResNet</span>
+                    <span class="tag">Contrastive Learning</span>
+                </div>
+                <p>Reproduced the SimCLR self-supervised learning pipeline with data augmentation, a ResNet encoder,
+                    projection head, NT-Xent loss, and downstream evaluation. Investigated batch-size and memory
+                    constraints with gradient accumulation and efficient data loading.</p>
+            </div>
+
+            <div class="project-card">
+                <h2>Job App Manager</h2>
+                <div class="tags">
+                    <span class="tag">Django</span>
+                    <span class="tag">REST API</span>
+                    <span class="tag">SQLite</span>
+                </div>
+                <p>Built Django REST APIs and relational data models for a team-developed job application tracking
+                    platform. Designed normalized SQLite schemas with foreign-key constraints and serializer validation
+                    across users, applications, companies, and related resources.</p>
+                <a href="https://github.com/CS222-UIUC/Job-Application-Manager" target="_blank">View on GitHub
                     &rarr;</a>
             </div>
 
@@ -139,23 +168,10 @@
                     <span class="tag">LLM</span>
                     <span class="tag">Multi-Agent</span>
                 </div>
-                <p>Multi-agent conversational environment framework where LLMs simulate social interactions such as
-                    negotiation, persuasion, and collaboration. Dynamic agent profile loading from databases.</p>
+                <p>Contributed to a conversational framework that orchestrates LLM-powered agents for negotiation,
+                    persuasion, and collaboration. Implemented environment initialization, profile loading from local
+                    and Hugging Face datasets, and structured JSON conversation persistence.</p>
                 <a href="https://github.com/ulab-uiuc/tiny-chat" target="_blank">View on GitHub &rarr;</a>
-            </div>
-
-            <div class="project-card">
-                <h2>Job App Manager</h2>
-                <div class="tags">
-                    <span class="tag">Django</span>
-                    <span class="tag">REST API</span>
-                    <span class="tag">SQLite</span>
-                </div>
-                <p>Built RESTful APIs in Django with well-structured data models and serializers to support scalable
-                    CRUD operations. Modeled relational database schemas enforcing integrity through foreign keys and
-                    constraints.</p>
-                <a href="https://github.com/CS222-UIUC/Job-Application-Manager" target="_blank">View on GitHub
-                    &rarr;</a>
             </div>
 
             <div class="project-card">
@@ -178,8 +194,8 @@
                     <span class="tag">Deep Learning</span>
                     <span class="tag">IEEE</span>
                 </div>
-                <p>Led a 4-person research group comparing DL models for mental health detection via social media posts.
-                    Co-published paper on IEEE as primary writer.</p>
+                <p>Led a 4-person research group comparing LSTM and other machine learning approaches for identifying
+                    suicidal tendency in social media posts. Co-published an IEEE paper as a primary writer.</p>
                 <a href="http://doi.org/10.1109/CompAuto54408.2021.00011" target="_blank">View Paper &rarr;</a>
             </div>
 
@@ -193,19 +209,6 @@
                 <p>Designed and built this personal website from scratch with 5-theme system, terminal command
                     interface, and responsive layout. Deployed via GitHub Pages.</p>
                 <a href="about.html">View About &rarr;</a>
-            </div>
-
-            <div class="project-card">
-                <h2>VR Game Dev</h2>
-                <div class="tags">
-                    <span class="tag">Unity</span>
-                    <span class="tag">VR</span>
-                    <span class="tag">HTC VIVE</span>
-                </div>
-                <p>Created VR Archery game using Unity and HTC VIVE Pro 2 at CMU's National High School Game Academy.
-                    Also built a remake of the classic arcade game Centipede.</p>
-                <a href="https://www.cmu.edu/pre-college/academic-programs/game-academy.html" target="_blank">View
-                    Program Page &rarr;</a>
             </div>
         </div>
     </section>

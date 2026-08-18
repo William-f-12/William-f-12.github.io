@@ -52,7 +52,7 @@ const commands = {
         desc: 'Who is William Lu',
         hidden: false,
         action: () => {
-            return 'William Lu\nCS & Math @ UIUC | Senior | GPA 4.0\nInterests: ML, Agent, Game Dev, Rock Music, Photography, EVA\n(Try "about" to learn more)';
+            return 'William Lu\nMathematics & Computer Science @ UIUC | Expected May 2027 | GPA 4.0\nBuilding performance tooling, AI systems, and GPU software.\nInterests: Systems, ML, Game Dev, Rock Music, Photography, EVA\n(Try "about" to learn more)';
         }
     },
     projects: {
